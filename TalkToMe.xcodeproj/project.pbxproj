@@ -80,6 +80,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C957C02E27D7714600E55335 /* Build configuration list for PBXNativeTarget "TalkToMe" */;
 			buildPhases = (
+				C957C03527D7884500E55335 /* Run Swiftlint */,
 				C957C01C27D7714400E55335 /* Sources */,
 				C957C01D27D7714400E55335 /* Frameworks */,
 				C957C01E27D7714400E55335 /* Resources */,
@@ -139,6 +140,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C957C03527D7884500E55335 /* Run Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SDKROOT=(xcrun --sdk macosx --show-sdk-path)\nswift run --package-path Tools/ swiftlint\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C957C01C27D7714400E55335 /* Sources */ = {
