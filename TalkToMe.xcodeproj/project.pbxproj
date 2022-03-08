@@ -103,6 +103,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = MongoDB;
 				TargetAttributes = {
 					C957C01F27D7714400E55335 = {
 						CreatedOnToolsVersion = 13.2.1;
