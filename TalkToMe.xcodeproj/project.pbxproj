@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C944C23427D8DFAA008328B0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944C23327D8DFAA008328B0 /* MainView.swift */; };
+		C944C23627D8E018008328B0 /* OpenSyncedRealmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944C23527D8E018008328B0 /* OpenSyncedRealmView.swift */; };
+		C944C23827D8E021008328B0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944C23727D8E021008328B0 /* LoginView.swift */; };
 		C957C02427D7714400E55335 /* TalkToMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C957C02327D7714400E55335 /* TalkToMeApp.swift */; };
 		C957C02627D7714400E55335 /* TalksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C957C02527D7714400E55335 /* TalksListView.swift */; };
 		C957C02827D7714600E55335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C957C02727D7714600E55335 /* Assets.xcassets */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C944C23327D8DFAA008328B0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C944C23527D8E018008328B0 /* OpenSyncedRealmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSyncedRealmView.swift; sourceTree = "<group>"; };
+		C944C23727D8E021008328B0 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C957C02027D7714400E55335 /* TalkToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C957C02327D7714400E55335 /* TalkToMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMeApp.swift; sourceTree = "<group>"; };
 		C957C02527D7714400E55335 /* TalksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksListView.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				C957C02327D7714400E55335 /* TalkToMeApp.swift */,
+				C944C23327D8DFAA008328B0 /* MainView.swift */,
+				C944C23727D8E021008328B0 /* LoginView.swift */,
+				C944C23527D8E018008328B0 /* OpenSyncedRealmView.swift */,
 				C957C02527D7714400E55335 /* TalksListView.swift */,
 				C9C56D3927D8D6FC00FE4761 /* TalkEditView.swift */,
 				C9C56D3727D8B5F600FE4761 /* Talk.swift */,
@@ -186,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C944C23627D8E018008328B0 /* OpenSyncedRealmView.swift in Sources */,
+				C944C23827D8E021008328B0 /* LoginView.swift in Sources */,
 				C957C02627D7714400E55335 /* TalksListView.swift in Sources */,
 				C957C02427D7714400E55335 /* TalkToMeApp.swift in Sources */,
 				C9C56D3A27D8D6FC00FE4761 /* TalkEditView.swift in Sources */,
+				C944C23427D8DFAA008328B0 /* MainView.swift in Sources */,
 				C9C56D3827D8B5F600FE4761 /* Talk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
