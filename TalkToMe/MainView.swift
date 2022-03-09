@@ -6,7 +6,7 @@ struct MainView: View {
 
     var body: some View {
         if let user = app.currentUser {
-            OpenSyncedRealmView()
+            OpenSyncedRealmView().environment(\.partitionValue, user.id)
         } else {
             LoginView(app: app)
         }
