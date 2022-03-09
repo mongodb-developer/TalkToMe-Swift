@@ -11,7 +11,9 @@ import SwiftUI
 struct TalkToMeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                TalksListView()
+            }
         }
     }
 }
