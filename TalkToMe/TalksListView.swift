@@ -3,7 +3,8 @@ import RealmSwift
 
 struct TalksListView: View {
     @ObservedResults(Talk.self) var talks
-    @State var counter = 1
+    @State var modalPresented = false
+    @State var talk: Talk?
 
     var body: some View {
         List {
@@ -15,12 +16,26 @@ struct TalksListView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
-                    $talks.append(Talk(title: "Talk \(counter)", speaker: "Speaker \(counter)"))
-                    counter += 1
+                    talk = Talk()
+                    $talks.append(talk!)
+                    modalPresented = true
                 } label: {
                     Label("Add", systemImage: "plus")
                 }
             }
+        }
+        .sheet(isPresented: $modalPresented) {
+                talk = nil
+        } content: {
+                navigateToTalkEdit()
+        }
+    }
+
+    func navigateToTalkEdit() -> some View {
+        if let talk = talk {
+            return AnyView(TalkEditView(talk: talk))
+        } else {
+            return AnyView(EmptyView())
         }
     }
 }

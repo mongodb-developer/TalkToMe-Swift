@@ -14,6 +14,7 @@
 		C957C03327D783B500E55335 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = C957C03127D783B500E55335 /* LICENSE.txt */; };
 		C957C03427D783B500E55335 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C957C03227D783B500E55335 /* README.md */; };
 		C9C56D3827D8B5F600FE4761 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C56D3727D8B5F600FE4761 /* Talk.swift */; };
+		C9C56D3A27D8D6FC00FE4761 /* TalkEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C56D3927D8D6FC00FE4761 /* TalkEditView.swift */; };
 		C9DAC76727D7A6150066C8AD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C9DAC76627D7A6150066C8AD /* Realm */; };
 		C9DAC76927D7A6150066C8AD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C9DAC76827D7A6150066C8AD /* RealmSwift */; };
 /* End PBXBuildFile section */
@@ -27,6 +28,7 @@
 		C957C03127D783B500E55335 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		C957C03227D783B500E55335 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C9C56D3727D8B5F600FE4761 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		C9C56D3927D8D6FC00FE4761 /* TalkEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			children = (
 				C957C02327D7714400E55335 /* TalkToMeApp.swift */,
 				C957C02527D7714400E55335 /* TalksListView.swift */,
+				C9C56D3927D8D6FC00FE4761 /* TalkEditView.swift */,
 				C9C56D3727D8B5F600FE4761 /* Talk.swift */,
 				C957C02727D7714600E55335 /* Assets.xcassets */,
 				C957C02927D7714600E55335 /* Preview Content */,
@@ -185,6 +188,7 @@
 			files = (
 				C957C02627D7714400E55335 /* TalksListView.swift in Sources */,
 				C957C02427D7714400E55335 /* TalkToMeApp.swift in Sources */,
+				C9C56D3A27D8D6FC00FE4761 /* TalkEditView.swift in Sources */,
 				C9C56D3827D8B5F600FE4761 /* Talk.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
