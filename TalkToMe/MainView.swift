@@ -8,7 +8,7 @@ struct MainView: View {
         if let user = app.currentUser {
             OpenSyncedRealmView()
         } else {
-            LoginView()
+            LoginView(app: app)
         }
     }
 }
