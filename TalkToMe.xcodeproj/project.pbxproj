@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C9EB4AEC2A0A5F260006C9C4 /* TalkToMeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB4AEB2A0A5F260006C9C4 /* TalkToMeApp.swift */; };
-		C9EB4AEE2A0A5F260006C9C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB4AED2A0A5F260006C9C4 /* ContentView.swift */; };
+		C9EB4AEE2A0A5F260006C9C4 /* TalksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9EB4AED2A0A5F260006C9C4 /* TalksListView.swift */; };
 		C9EB4AF02A0A5F280006C9C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EB4AEF2A0A5F280006C9C4 /* Assets.xcassets */; };
 		C9EB4AF32A0A5F280006C9C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9EB4AF22A0A5F280006C9C4 /* Preview Assets.xcassets */; };
 		C9EB4AFE2A0A8D9B0006C9C4 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = C9EB4AFD2A0A8D9B0006C9C4 /* Realm */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		C9EB4AE82A0A5F260006C9C4 /* TalkToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9EB4AEB2A0A5F260006C9C4 /* TalkToMeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkToMeApp.swift; sourceTree = "<group>"; };
-		C9EB4AED2A0A5F260006C9C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C9EB4AED2A0A5F260006C9C4 /* TalksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalksListView.swift; sourceTree = "<group>"; };
 		C9EB4AEF2A0A5F280006C9C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9EB4AF22A0A5F280006C9C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				C9EB4AEB2A0A5F260006C9C4 /* TalkToMeApp.swift */,
-				C9EB4AED2A0A5F260006C9C4 /* ContentView.swift */,
+				C9EB4AED2A0A5F260006C9C4 /* TalksListView.swift */,
 				C9EB4AEF2A0A5F280006C9C4 /* Assets.xcassets */,
 				C9EB4AF12A0A5F280006C9C4 /* Preview Content */,
 			);
@@ -151,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9EB4AEE2A0A5F260006C9C4 /* ContentView.swift in Sources */,
+				C9EB4AEE2A0A5F260006C9C4 /* TalksListView.swift in Sources */,
 				C9EB4AEC2A0A5F260006C9C4 /* TalkToMeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
