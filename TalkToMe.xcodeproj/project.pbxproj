@@ -38,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C927E9482A0E65FA008C54B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C9EB4AED2A0A5F260006C9C4 /* TalksListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		C9DC93D72A0E294D005211DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +73,9 @@
 		C9EB4AEA2A0A5F260006C9C4 /* TalkToMe */ = {
 			isa = PBXGroup;
 			children = (
+				C927E9482A0E65FA008C54B5 /* Views */,
 				C9DC93D72A0E294D005211DF /* Model */,
 				C9EB4AEB2A0A5F260006C9C4 /* TalkToMeApp.swift */,
-				C9EB4AED2A0A5F260006C9C4 /* TalksListView.swift */,
 				C9EB4AEF2A0A5F280006C9C4 /* Assets.xcassets */,
 				C9EB4AF12A0A5F280006C9C4 /* Preview Content */,
 			);
