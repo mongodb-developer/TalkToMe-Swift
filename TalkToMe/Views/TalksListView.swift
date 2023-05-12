@@ -13,8 +13,10 @@ struct TalksListView: View {
     @State private var counter = 1
 
     var body: some View {
-        List(talks) { talk in
-            TalksListItem(title: talk.title, speaker: talk.speaker)
+        List {
+            ForEach(talks) { talk in
+                TalksListItem(title: talk.title, speaker: talk.speaker)
+            }.onDelete(perform: $talks.remove)
         }
         .navigationTitle("Talks")
         .toolbar {
