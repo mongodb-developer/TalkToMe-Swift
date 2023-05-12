@@ -9,7 +9,9 @@
 import Foundation
 import RealmSwift
 
-class Talk: Object {
+class Talk: Object, ObjectKeyIdentifiable {
+    // swiftlint:disable:next identifier_name
+    @Persisted (primaryKey: true) var _id: ObjectId
     @Persisted var title: String
     @Persisted var speaker: String
     @Persisted private var proposedDate: Date = Date()

@@ -6,18 +6,22 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct TalksListView: View {
+    @ObservedResults(Talk.self) var talks
+    @State private var counter = 1
+
     var body: some View {
-        List {
-            TalksListItem(title: "Growing Hyperpotatoes", speaker: "Captn. Hype")
-            TalksListItem(title: "The wild mushrooms rebellion", speaker: "Toad")
+        List(talks) { talk in
+            TalksListItem(title: talk.title, speaker: talk.speaker)
         }
         .navigationTitle("Talks")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
-                    // Action not defined yet
+                    $talks.append(Talk(title: "Talk \(counter)", speaker: "Speaker \(counter)"))
+                    counter += 1
                 } label: {
                     Label("Add", systemImage: "plus")
                 }
@@ -34,14 +38,6 @@ struct TalksListItem: View {
         VStack(alignment: .leading, spacing: 5) {
             Text(title).font(.headline)
             Text(speaker).font(.subheadline)
-        }
-    }
-}
-
-struct TalksListViewPreviews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            TalksListView()
         }
     }
 }
