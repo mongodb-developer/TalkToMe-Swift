@@ -6,14 +6,15 @@
 //
 
 import SwiftUI
+import RealmSwift
+
+let app = RealmSwift.App(id: "<app-id>")
 
 @main
-struct TalkToMeApp: App {
+struct TalkToMeApp: SwiftUI.App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                TalksListView()
-            }
+            MainView(app: app)
         }
     }
 }

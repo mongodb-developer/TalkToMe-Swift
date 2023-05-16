@@ -32,6 +32,7 @@ struct TalkEditView: View {
                                     thawed.title = title
                                     thawed.speaker = speaker
                                     thawed.scheduledDate = scheduledDate
+                                    thawed.ownerId = realm.syncSession?.parentUser()?.id ?? ""
                                 }
                             } catch {
                                 print("Failed to update talk: \(error)")
