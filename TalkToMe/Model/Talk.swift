@@ -12,14 +12,16 @@ import RealmSwift
 class Talk: Object, ObjectKeyIdentifiable {
     // swiftlint:disable:next identifier_name
     @Persisted (primaryKey: true) var _id: ObjectId
+    @Persisted var ownerId: String
     @Persisted var title: String
     @Persisted var speaker: String
     @Persisted private var proposedDate: Date = Date()
     @Persisted var scheduledDate: Date?
 
-    convenience init(title: String, speaker: String) {
+    convenience init(title: String, speaker: String, ownerId: String) {
         self.init()
         self.title = title
         self.speaker = speaker
+        self.ownerId = ownerId
     }
 }
